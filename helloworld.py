@@ -39,8 +39,22 @@ plt.figure()
 plt.hist(metallicity_lt_1, bins=np.arange(min(metallicity_lt_1), max(metallicity_lt_1) + 0.1, 0.1).tolist(), alpha=0.5, label='age < 1')
 plt.hist(metallicity_between_1_and_5, bins=np.arange(min(metallicity_between_1_and_5), max(metallicity_between_1_and_5) + 0.1, 0.1).tolist(), alpha=0.5, label='1 < age < 5')
 plt.hist(metallicity_gt_5, bins=np.arange(min(metallicity_gt_5), max(metallicity_gt_5) + 0.1, 0.1).tolist(), alpha=0.5, label='age > 5')
+
+average_lt_1 = (float(np.mean(metallicity_lt_1)),float(np.median(metallicity_lt_1)))
+average_between_1_and_5 = (float(np.mean(metallicity_between_1_and_5)),float(np.median(metallicity_between_1_and_5)))
+average_gt_5 = (float(np.mean(metallicity_gt_5)),float(np.median(metallicity_gt_5)))
+
+plt.axvline(x=average_lt_1[0], color='b', linestyle='-', label='avg age < 1')
+plt.axvline(x=average_between_1_and_5[0], color='r', linestyle='-', label='avg 1 < age < 5')
+plt.axvline(x=average_gt_5[0], color='g', linestyle='-', label='avg age > 5')
+
+plt.axvline(x=average_lt_1[1], color='b', linestyle=':', label='med age < 1')
+plt.axvline(x=average_between_1_and_5[1], color='r', linestyle=':', label='med 1 < age < 5')
+plt.axvline(x=average_gt_5[1], color='g', linestyle=':', label='med age > 5')
+
 plt.legend()
 plt.show()
+
 
 
 import sys
