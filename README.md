@@ -6,7 +6,7 @@ Sistema linux, python, librerie numpy e matplotlib
 
 
 ## USO:
-scaricare il file "install.sh" e chiamarlo da terminale con 'bash install.sh'
+scaricare il file "install.sh" e chiamarlo da terminale con 'bash install.sh' con gli opportuni permessi di esecuzione
 
 navigare nella sottocartella appena creata 'prova_finale_abramo'
 
