@@ -5,4 +5,4 @@ OUTPUT_FILE="download.dat"
 
 curl -o "$OUTPUT_FILE" "$URL"
 
-python prova_finale.py "$OUTPUT_FILE"
+python3 prova_finale.py "$OUTPUT_FILE"
