@@ -1,5 +1,6 @@
 # AIF23_24
-repo per il corso di abilità informatiche e telematiche
+repo per il corso di abilità informatiche e telematiche.
+L'applicazione analizzerà parzialmente un database contenente dati di carattere astrofisico, producendo un diagramma HR, un grafico che analizza la metallicità delle stelle divise per età, un grafico che rappresenta le metallicità in funzione della massa iniziale.
 
 ## Prerequisiti:
 Sistema linux, python, librerie numpy e matplotlib
