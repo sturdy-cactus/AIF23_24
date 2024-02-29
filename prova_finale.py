@@ -1,4 +1,4 @@
-
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -8,7 +8,7 @@ b_y=[]
 ageparent=[]
 metallicity=[]
 m_ini=[]
-filename="Nemo_6670.dat"
+filename=sys.argv[1]
 
 #reading from file
 with open(filename, 'r') as file:
